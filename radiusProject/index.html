@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+    <title>Home | Radius Raid</title>
+
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <div class="modal-container">
+        <div class="modal">
+            <img class="localizacao" src="/img/ponto.png" alt="Localização">
+            <section id="localAdicionado" class="conteudo-mapa"> 
+            </section>
+            <button class="comecar" id="comecar"><a href="/producao/producao.html"> Monte Seu Robô</a></button>
+        </div>
+    </div>
+
+    <main>
+        <section class="robotron">
+            <img id="robotron" class="robo" src="/img/robotron.png" alt="Robotron">
+            <figcaption class="titulo">RADIUS RAID <br>2000</figcaption>
+        </section>
+
+        <form  class="formulario">
+            <p> FICHA PARA ALISTAMENTO</p>
+            <div class="contaiener-form">
+            <label for="nome">Qual o Seu Nome?</label>
+            <input type="text" id="nome" nome="nome" autocomplete="off" placeholder="Seu Nome"  style="color:silver;" required>
+            </div>
+
+            <div class="contaiener-form">
+            <label for="cidade">Qual a sua cidade?</label>
+            <input type="text" id="cidade" nome="cidade" autocomplete="off" placeholder="Sua Localização" style="color:silver;" required>
+            </div>
+
+            <div class="contaiener-form">
+            <label for="roboNome">Qual o nome do seu robô?</label>
+            <input type="text" id="roboNome" nome="roboNome" autocomplete="off" placeholder="Apelido" style="color:silver;">
+            </div>
+
+            
+            <button class="enviar" id="enviar" type="submit">Inscrever-se</button>
+           
+        </form>
+        
+
+    </main>
+    <script src="/js/home.js"></script>
+</body>
+</html>
